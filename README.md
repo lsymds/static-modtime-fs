@@ -1,6 +1,6 @@
 # staticmodtimefs
 
-A Go package that wraps a filesystem and provides a constant modification time of any files and/or directories
+A Go package that wraps a `fs.FS` implementation and provides a constant modification time of any files and/or directories
 contained within.
 
 This package was created to allow Go's default `http.FileServerFS` handler to correctly apply `Last-Modified` headers
