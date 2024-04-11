@@ -8,8 +8,10 @@ on:
       - "*"
 
 jobs:
-  ci:
-    runs-on: golang:1.22
+  build-and-test:
+    runs-on: ubuntu-latest
+    container:
+      image: golang:1.22
     steps:
       - uses: actions/checkout@v4
       - name: build
